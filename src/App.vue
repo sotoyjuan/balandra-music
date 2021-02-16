@@ -1,5 +1,5 @@
 <template>
-  <div id="my-app" class="flex flex-col md:min-h-screen">
+ <!-- <div id="my-app" class="flex flex-col md:min-h-screen">
     <app-header />
 
     <transition name="loader-animation" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
@@ -13,7 +13,16 @@
     </transition>
 
     <app-footer />
+</div> -->
+<div  id="balandra-app" class="flex flex-col min-h-screen">
+  <app-header />
+  <div class="m-auto">
+    <router-view />
+    <!-- <h3>HOLA BALANDRA</h3> -->
+    <!-- <p class="text-center">Próximamente......</p> -->
   </div>
+  <app-footer />
+</div>
 </template>
 
 <script>
@@ -58,3 +67,8 @@ export default {
   },
 };
 </script>
+
+<style>
+
+
+</style>

@@ -3,36 +3,32 @@
 
 /* Begin tailwind customizations */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @apply font-normal mb-2;
+html {
+  @apply font-ubuntu;
 }
 
-h1 {
-  @apply text-5xl font-hairline;
+body {
+  @apply bg-fixed bg-gradient-to-tr from-yellow-300 to-green-200;
 }
 
-h2 {
-  @apply text-4xl;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-h3 {
-  @apply text-xl uppercase tracking-widest font-semibold;
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-h4 {
-  @apply text-xl;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #68d391;
+  border-radius: 3px;
 }
 
-.site-content p {
-  @apply mb-5;
-}
-
-.loader .progress-bar {
-  @apply bg-teal-500;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #48bb78;
 }
 
 /* end tailwind customizations */
