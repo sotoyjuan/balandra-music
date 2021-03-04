@@ -43,11 +43,11 @@ export default {
 
   getPosts(limit = 5, cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'posts?per_page=' + limit)
-      .then(response => {
+      .get(SETTINGS.API_BASE_PATH + "posts?per_page=" + limit + "&_embed")
+      .then((response) => {
         cb(response.data);
       })
-      .catch(e => {
+      .catch((e) => {
         cb(e);
       });
   },

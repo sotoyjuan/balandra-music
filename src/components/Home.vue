@@ -29,15 +29,28 @@
         </primary-button>
       </div>
     </div>
-    <div class="my-10 flex flex-no-wrap flex-col items-center">
+
+<!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup" class="my-10 flex flex-no-wrap flex-col items-center">
+      <form action="https://gmail.us17.list-manage.com/subscribe/post?u=76d10784d96e4f1f65a6b10d1&amp;id=fd5719d5b9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
       <p class="mini-widget-text text-center font-medium my-2">O únete a nuestro Aviario y recibe contenido único y noticias (prometemos no mandar SPAM)</p>
-      <div class="flex items-center">
-        <input placeholder="soyunave@balandra.com.co..." class="input" type="email">
-        <secondary-button class="mx-2">
-          <span>Join</span>
-        </secondary-button>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL"> </label>
+        <input type="email" value="" name="EMAIL" class="required email input" placeholder="soyunave@balandramusic.com..." id="mce-EMAIL">
       </div>
-    </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_76d10784d96e4f1f65a6b10d1_fd5719d5b9" tabindex="-1" value=""></div>
+          <div class="clear text-center m-4"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="sbutton secondary-button py-1 px-3 text-white font-bold text-sm uppercase rounded bg-gradient-to-tr from-indigo-400 to-purple-400 hover:bg-opacity-25 focus:outline-none"></div>
+          </div>
+      </form>
+      </div>
+
+<!--End mc_embed_signup-->
+
 
       <!-- <div class="buy-button">
         <primary-button>

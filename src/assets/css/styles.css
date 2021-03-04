@@ -58,7 +58,7 @@ input.input:placeholder {
     top: 0;
     width: auto;
     height: 100%;
-    filter: grayscale(100%) opacity(50%);
+    filter: brightness(1.5) saturate(150%) contrast(50%) grayscale(50%) opacity(40%);
   }
 
   .last-post h4, p {

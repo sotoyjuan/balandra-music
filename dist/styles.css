@@ -18977,9 +18977,9 @@ input.input:placeholder{
   top:0;
   width:auto;
   height:100%;
-  -webkit-filter:grayscale(100%) opacity(50%);
-  filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncA type="table" tableValues="0 0.5" /></feComponentTransfer></filter></svg>#filter');
-  filter:grayscale(100%) opacity(50%)
+  -webkit-filter:brightness(1.5) saturate(150%) contrast(50%) grayscale(50%) opacity(40%);
+  filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.5" /><feFuncG type="linear" slope="1.5" /><feFuncB type="linear" slope="1.5" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1.3935000000000002 -0.35750000000000004 -0.03599999999999999 0 0 -0.10650000000000001 1.1575 -0.03599999999999999 0 0 -0.10650000000000001 -0.35750000000000004 1.4640000000000002 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.5" intercept="0.25" /><feFuncG type="linear" slope="0.5" intercept="0.25" /><feFuncB type="linear" slope="0.5" intercept="0.25" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6063000000000001 0.3576 0.0361 0 0 0.1063 0.8575999999999999 0.0361 0 0 0.1063 0.3576 0.5361 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncA type="table" tableValues="0 0.4" /></feComponentTransfer></filter></svg>#filter');
+  filter:brightness(1.5) saturate(150%) contrast(50%) grayscale(50%) opacity(40%)
 }
 
 .last-post h4,p{

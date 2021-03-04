@@ -5,15 +5,18 @@
     </h3>
     <div class="mx-5 my-8" v-if="recentPostsLoaded">
       <div v-for="post in recentPosts(limit)" :key="post.id">
-        <router-link :to="post.slug" tag="div" class="last-post"> 
-          <img src="http://vccw.balandra/wp-content/uploads/2021/03/image-6.jpg" alt="Pajarito">
-          <h4 class="text-3xl uppercase font-normal">{{ post.title.rendered }}</h4>
-          <p class="post-excerpt text-xl" v-html="post.excerpt.rendered"></p>
+        <!-- <router-link :to="post.slug" tag="div" class="last-post">  -->
+          <div class="last-post">
+            <img :src="post._embedded['wp:featuredmedia']['0'].source_url" alt="Pajarito">
+            <div class="filter"></div>
+            <h4 class="text-3xl uppercase font-normal">{{ post.title.rendered }}</h4>
+            <p class="post-excerpt text-xl" v-html="post.excerpt.rendered"></p>
+          </div>
 <!-- 
           <div class="text-sm">
             <p class="text-gray-600">{{ getAuthor(post) }}</p>
           </div> -->
-        </router-link>
+        <!-- </router-link> -->
       </div>
     </div>
     <div v-else>Loading...</div>
@@ -41,6 +44,9 @@ export default {
     getAuthor(post) {
       console.log(post);
     },
+    getFeaturedImage(post) {
+      console.log(post);
+    }
   },
 
   mounted() {
@@ -48,3 +54,7 @@ export default {
   },
 };
 </script>
+
+<style>
+
+</style>
