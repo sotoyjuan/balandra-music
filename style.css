@@ -7,3 +7,19 @@ License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Text Domain: Balandra
 */
+
+input.input {
+  background-color: rgba(37, 37, 37, 0.5);
+  border: 2px solid #FFFFFF;
+  color: white;
+  
+}
+
+input.input:focus {
+  outline: none;
+}
+
+input.input::placeholder {
+  color: white;
+  opacity: 0.8;
+}

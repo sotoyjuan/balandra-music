@@ -26,3 +26,10 @@ function load_vue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'load_vue_scripts', 100 );
+add_theme_support('post-thumbnails');
+
+function my_excerpt_length($length)
+{
+  return 35;
+}
+add_filter('excerpt_length', 'my_excerpt_length');

@@ -16,6 +16,7 @@ module.exports = {
           '"Noto Sans"',
           "sans-serif",
         ],
+        amatic: ["AmaticSC",  "Ubuntu"],
       },
     },
     screens: {

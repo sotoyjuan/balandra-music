@@ -14,12 +14,18 @@
 
     <app-footer />
 </div> -->
+
 <div  id="balandra-app" class="flex flex-col min-h-screen">
+  <!-- <iframe src="https://sotoyjuan.github.io/aviario-interactivo-test-1/" height="750" width="1300" frameborder="0"> </iframe> -->
+  <div class="flex justify-center items-center">
+    <img src="https://balandramusic.com/wp-content/uploads/2021/03/Proximamente.png" alt="" class="coming-soon-image">
+    <div class="desktop-message bg-red-400 text-center p-6 m-1 rounded w-full">
+      <h5 class="text-white font-bold">Lo sentimos! Para disfrutar del Aviario Interactivo debes visitarnos desde un computador o laptop!</h5>
+    </div>
+  </div>
   <app-header />
   <div class="m-auto">
     <router-view />
-    <!-- <h3>HOLA BALANDRA</h3> -->
-    <!-- <p class="text-center">Próximamente......</p> -->
   </div>
   <app-footer />
 </div>
@@ -69,6 +75,27 @@ export default {
 </script>
 
 <style>
+iframe {
+  margin: 0 auto;
+}
 
+.desktop-message {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  iframe, .coming-soon-image{
+    display: none;
+  }
+  .desktop-message {
+    display: block;
+  }
+}
+
+.coming-soon-image {
+  width: 1280px;
+  height: 720px;
+  margin: 12px;
+}
 
 </style>

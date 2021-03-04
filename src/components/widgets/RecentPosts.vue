@@ -1,45 +1,34 @@
 <template>
-  <div class="widget recent-posts">
-    <h3>
+  <div class="widget recent-posts mx-10">
+    <h3 class="text-5xl uppercase font-light">
       <slot></slot>
     </h3>
-    <div v-if="recentPostsLoaded">
+    <div class="mx-5 my-8" v-if="recentPostsLoaded">
       <div v-for="post in recentPosts(limit)" :key="post.id">
-        <router-link :to="post.slug" tag="div" class="max-w-sm w-full lg:max-w-full lg:flex">
-          <div
-            class="h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            style="background-image: url('https://res.cloudinary.com/evanagee/image/upload/c_scale,h_400/v1580267636/VueWP/Youtube-bg_00240.jpg')"
-            title="Woman holding a mug"
-          ></div>
-          <div
-            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-          >
-            <div class="mb-8">
-              <div class="text-gray-900 font-bold text-xl mb-2">{{ post.title.rendered }}</div>
-              <p class="text-gray-700 text-base" v-html="post.excerpt.rendered"></p>
-            </div>
-            <div class="flex items-center">
-              <img
-                class="w-10 h-10 rounded-full mr-4"
-                src="https://res.cloudinary.com/evanagee/image/upload/c_fit,w_50/v1551277265/evanagee.com/evan-2018.jpg"
-                alt="Avatar of Jonathan Reinink"
-              />
-              <div class="text-sm">
-                <p class="text-gray-600">{{ getAuthor(post) }}</p>
-              </div>
-            </div>
-          </div>
+        <router-link :to="post.slug" tag="div" class="last-post"> 
+          <img src="http://vccw.balandra/wp-content/uploads/2021/03/image-6.jpg" alt="Pajarito">
+          <h4 class="text-3xl uppercase font-normal">{{ post.title.rendered }}</h4>
+          <p class="post-excerpt text-xl" v-html="post.excerpt.rendered"></p>
+<!-- 
+          <div class="text-sm">
+            <p class="text-gray-600">{{ getAuthor(post) }}</p>
+          </div> -->
         </router-link>
       </div>
     </div>
     <div v-else>Loading...</div>
+    <!-- <secondary-button>more news</secondary-button> -->
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import SecondaryButton from '../common/SecondaryButton';
 
 export default {
+  components: {
+    SecondaryButton
+  },
   props: ['limit'],
   computed: {
     ...mapGetters({
