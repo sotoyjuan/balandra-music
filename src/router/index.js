@@ -5,6 +5,7 @@ import Router from 'vue-router';
 import Home from '../components/Home.vue';
 import Post from '../components/Post/Post.vue';
 import Page from '../components/Page/Page.vue';
+import News from '../components/News.vue';
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ const router = new Router({
       path: '/:year/:month/:day/:postSlug',
       name: 'Post',
       component: Post,
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: News
     },
     {
       path: '/:pageSlug',

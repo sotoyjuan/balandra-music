@@ -2,30 +2,30 @@
   <footer class="site-footer bg-black text-white flex items-center justify-between flex-col lg:flex-row px-6 py-10">
     <div class="site-header my-2 flex items-center flex-shrink-0">
       <router-link to="/">
-        <h2 class="text-base font-amatic font-bold tracking-widest hover:text-purple-300 transition-colors duration-200 ease-out">BALANDRA</h2>
+        <h2 class="text-2xl font-amatic tracking-widest hover:text-purple-300 transition-colors duration-200 ease-out">BALANDRA</h2>
       </router-link>
     </div>
-    <div class="menu-container my-2 w-full flex flex-grow items-center justify-center lg:w-auto">
+    <div class="menu-container my-2 w-full flex flex-grow items-center justify-center flex-col lg:flex-row lg:w-auto">
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             About
           </a>
-          <span>-</span>
+          <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Shows
           </a>
-          <span>-</span>
+          <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Music
           </a>
-          <span>-</span>
+          <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Gallery
           </a>
-          <span>-</span>
+          <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Press
           </a>
-          <span>-</span>
+          <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Contact
           </a>

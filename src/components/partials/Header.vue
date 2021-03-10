@@ -2,7 +2,7 @@
   <nav class="site-header flex items-center justify-between flex-wrap p-6">
     <div class="site-header__interior flex items-center flex-shrink-0">
       <router-link to="/">
-        <h2 class="text-2xl font-amatic font-bold tracking-widest hover:text-purple-300 transition-colors duration-200 ease-out">BALANDRA</h2>
+        <h2 class="text-3xl font-amatic font-bold tracking-widest hover:text-purple-300 transition-colors duration-200 ease-out">BALANDRA</h2>
       </router-link>
     </div>
     <div class="block lg:hidden">
@@ -17,27 +17,27 @@
       </button>
     </div>
     <div class="w-full hidden lg:flex flex-grow lg:items-center lg:justify-center lg:w-auto">
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         About
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Shows
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Music
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Gallery
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Press
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a href="#responsive-header" class="inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Contact
       </a>
     </div>

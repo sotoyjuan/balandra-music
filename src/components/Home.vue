@@ -1,7 +1,7 @@
 <template>
   <div class="page page--home">
 
-    <recent-posts-widget limit="1" class="mb-10">News</recent-posts-widget>
+    <recent-posts-widget limit="1" moreButton="false" class="mb-10">News</recent-posts-widget>
 
     <div class="my-10 flex flex-no-wrap flex-col items-center">
       <svg class="mx-auto my-2" width="83" height="83" viewBox="0 0 83 83" fill="#fc8181" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@
           <div class="response" id="mce-success-response" style="display:none"></div>
         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_76d10784d96e4f1f65a6b10d1_fd5719d5b9" tabindex="-1" value=""></div>
-          <div class="clear text-center m-4"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="sbutton secondary-button py-1 px-3 text-white font-bold text-sm uppercase rounded bg-gradient-to-tr from-indigo-400 to-purple-400 hover:bg-opacity-25 focus:outline-none"></div>
+          <div class="clear text-center m-4"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button secondary-button py-1 px-3 text-white font-bold text-sm uppercase rounded bg-gradient-to-tr from-indigo-300 to-green-300 hover:bg-opacity-25 focus:outline-none"></div>
           </div>
       </form>
       </div>

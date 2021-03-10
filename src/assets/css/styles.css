@@ -6,11 +6,7 @@
 @import './_tailwind';
 @import './components/progress-bar';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-@font-face {
-  font-family: 'AmaticSC';
-  src: url(/fonts/AmaticSC-Bold.ttf) format('ttf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 .button {
   transition: all 200ms ease-out;
@@ -38,30 +34,6 @@ input.input:placeholder {
   opacity: 0.8;
 }
 
-  .recent-posts {
-    max-width: 800px;
-  }
 
-  .post-excerpt {
-    max-width: 70%;
-  }
 
-  .last-post {
-    position: relative;
-    min-height: 300px;
-  }
 
-  .last-post img {
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: auto;
-    height: 100%;
-    filter: brightness(1.5) saturate(150%) contrast(50%) grayscale(50%) opacity(40%);
-  }
-
-  .last-post h4, p {
-    position: relative;
-    z-index: 2;
-  }
