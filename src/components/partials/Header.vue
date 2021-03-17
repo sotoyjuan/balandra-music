@@ -17,9 +17,9 @@
       </button>
     </div>
     <div class="w-full hidden lg:flex flex-grow lg:items-center lg:justify-center lg:w-auto">
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/about" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         About
-      </a>
+      </router-link>
       <span class="hidden lg:inline-block">-</span>
       <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Shows
@@ -33,9 +33,9 @@
         Gallery
       </a>
       <span class="hidden lg:inline-block">-</span>
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/press" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Press
-      </a>
+      </router-link>
       <span class="hidden lg:inline-block">-</span>
       <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Contact
@@ -43,9 +43,9 @@
     </div>
 
     <div v-if="showMenu" class="w-full block lg:hidden flex-grow">
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
-        About
-      </a>  
+      <router-link to="/about" @click="toggleMenu" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+         <span @click="toggleMenu">About</span>
+      </router-link>  
       <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Shows
       </a>
@@ -55,9 +55,9 @@
       <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Gallery
       </a>
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
-        Press
-      </a>
+      <router-link to="/press" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+        <span @click="toggleMenu">Press</span>
+      </router-link>
       <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Contact
       </a>

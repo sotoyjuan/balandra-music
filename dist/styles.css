@@ -18951,6 +18951,19 @@ input.input:placeholder{
   opacity:.8
 }
 
+.page-content a,.post-content a{
+  font-weight:700;
+  font-size:1.2rem
+}
+
+.page-content a:hover,.post-content a:hover{
+  text-decoration:underline
+}
+
+.router-link-exact-active{
+  color:#9f7aea
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width:100%;
@@ -92068,10 +92081,12 @@ input.input:placeholder{
 p.mini-widget-text{
   max-width:250px
 }.post{
-  max-width:1000px
-}.page-content[data-v-3eaf23d0] p{
-  margin-bottom:1rem
-}.culture-minstry[data-v-6ffa9a66]{
+  max-width:1000px;
+  min-width:800px
+}.page[data-v-aed128b8]{
+  max-width:1000px;
+  min-width:800px
+}.culture-minstry[data-v-326071a7]{
   max-width:220px;
   margin:20px
 }iframe{

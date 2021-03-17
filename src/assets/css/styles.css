@@ -34,6 +34,15 @@ input.input:placeholder {
   opacity: 0.8;
 }
 
+.post-content a, .page-content a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
+.post-content a:hover, .page-content a:hover {
+  text-decoration: underline;
+}
 
-
+.router-link-exact-active {
+  color: #9f7aea
+}

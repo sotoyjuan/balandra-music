@@ -18,11 +18,11 @@ export default {
 
   getPages(cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'pages?per_page=10')
-      .then(response => {
+      .get(SETTINGS.API_BASE_PATH + "pages?per_page=10" + "&_embed")
+      .then((response) => {
         cb(response.data);
       })
-      .catch(e => {
+      .catch((e) => {
         cb(e);
       });
   },
@@ -32,11 +32,11 @@ export default {
       return false;
 
     axios
-      .get(SETTINGS.API_BASE_PATH + 'pages/' + id)
-      .then(response => {
+      .get(SETTINGS.API_BASE_PATH + "pages/" + id + "?_embed")
+      .then((response) => {
         cb(response.data);
       })
-      .catch(e => {
+      .catch((e) => {
         cb(e);
       });
   },

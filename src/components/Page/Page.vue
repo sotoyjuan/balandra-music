@@ -1,8 +1,16 @@
 <template>
-  <div class="pt-10">
+  <div class="mx-5 lg:mx-10">
     <template v-if="allPagesLoaded">
-      <h1 class="text-3xl mb-5">{{ pageContent.title.rendered }}</h1>
-      <div class="page-content" v-html="pageContent.content.rendered"></div>
+      <h1 class="text-3xl mb-5"></h1>
+       <h3 class="text-5xl uppercase font-light">
+        {{ pageContent.title.rendered }}
+      </h3>
+      <div class="page mx-1 lg:mx-5 my-12">
+        <img v-if="pageContent._embedded['wp:featuredmedia']" class="m-5 float-right" style="max-height:300px; width:auto;" :src="pageContent._embedded['wp:featuredmedia']['0'].source_url" alt="Pajarito">
+        <p class="px-10 my-1 text-sm text-gray-800 font-light"> {{pageContent._embedded['author'][0].name}} - {{pageContent.date}} </p>
+        <div class="page-content px-10" v-html="pageContent.content.rendered"></div>
+      </div>
+    
     </template>
     <Loader v-else />
   </div>
@@ -20,6 +28,7 @@ export default {
     }),
 
     pageContent() {
+      console.log(this.page(this.$route.params.pageSlug));
       return this.page(this.$route.params.pageSlug);
     },
   },
@@ -31,9 +40,8 @@ export default {
 </script>
 
 <style type="postcss" scoped>
-.page-content {
-  & >>> p {
-    margin-bottom: 1rem;
+  .page {
+    max-width: 1000px;
+    min-width: 800px;
   }
-}
 </style>

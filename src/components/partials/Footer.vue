@@ -6,9 +6,13 @@
       </router-link>
     </div>
     <div class="menu-container my-2 w-full flex flex-grow items-center justify-center flex-col lg:flex-row lg:w-auto">
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/news" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+            News
+          </router-link>
+          <span class="hidden lg:block">-</span>
+          <router-link to="/about" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             About
-          </a>
+          </router-link>
           <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Shows
@@ -22,9 +26,9 @@
             Gallery
           </a>
           <span class="hidden lg:block">-</span>
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/press" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Press
-          </a>
+          </router-link>
           <span class="hidden lg:block">-</span>
           <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Contact
