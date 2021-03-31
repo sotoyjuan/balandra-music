@@ -21,46 +21,46 @@
         About
       </router-link>
       <span class="hidden lg:inline-block">-</span>
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/shows" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Shows
-      </a>
+      </router-link>
       <span class="hidden lg:inline-block">-</span>
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/music" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Music
-      </a>
+      </router-link>
       <span class="hidden lg:inline-block">-</span>
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/gallery" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Gallery
-      </a>
+      </router-link>
       <span class="hidden lg:inline-block">-</span>
       <router-link to="/press" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Press
       </router-link>
       <span class="hidden lg:inline-block">-</span>
-      <a @click="comingSoon" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/contact" class="cursor-pointer inline-block mt-0 mx-2 text-center font-medium text-base tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Contact
-      </a>
+      </router-link>
     </div>
 
     <div v-if="showMenu" class="w-full block lg:hidden flex-grow">
       <router-link to="/about" @click="toggleMenu" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
          <span @click="toggleMenu">About</span>
       </router-link>  
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/shows" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Shows
-      </a>
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      </router-link>
+      <router-link to="/music" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Music
-      </a>
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      </router-link>
+      <router-link to="/gallery" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Gallery
-      </a>
+      </router-link>
       <router-link to="/press" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         <span @click="toggleMenu">Press</span>
       </router-link>
-      <a @click="comingSoon" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
+      <router-link to="/contact" class="cursor-pointer block mt-4 text-center font-medium text-1xl tracking-wider uppercase text-coolGray-700 hover:text-purple-300 transition-colors duration-200 ease-out">
         Contact
-      </a>
+      </router-link>
     </div>
     
   </nav>

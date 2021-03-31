@@ -14,25 +14,25 @@
             About
           </router-link>
           <span class="hidden lg:block">-</span>
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/shows" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Shows
-          </a>
+          </router-link>
           <span class="hidden lg:block">-</span>
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/music" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Music
-          </a>
+          </router-link>
           <span class="hidden lg:block">-</span>
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/gallery" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Gallery
-          </a>
+          </router-link>
           <span class="hidden lg:block">-</span>
           <router-link to="/press" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Press
           </router-link>
           <span class="hidden lg:block">-</span>
-          <a @click="comingSoon" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
+          <router-link to="/contact" class="cursor-default inline-block mt-0 mx-2 text-center font-medium text-sm tracking-wider uppercase hover:text-purple-300 transition-colors duration-200 ease-out">
             Contact
-          </a>
+          </router-link>
     </div>
     <div class="social-media-container my-2 flex items-end md:items-center">
       <button @click="goToSocialMedia('https://www.facebook.com/balandramusica')" class="mx-5 hover:text-purple-300 transition-colors duration-200 ease-out focus:outline-none">

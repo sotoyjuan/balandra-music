@@ -51,4 +51,46 @@ export default {
         cb(e);
       });
   },
+  
+  getAlbums(cb) {
+    axios
+      .get(SETTINGS.API_BASE_PATH + 'album?_embed')
+      .then((response) => {
+        cb(response.data);
+      })
+      .catch((e) => {
+        cb(e);
+      });
+  },
+  getMusicSheets(cb) {
+    axios
+      .get(SETTINGS.API_BASE_PATH + 'musicsheet?_embed')
+      .then((response) => {
+        cb(response.data);
+      })
+      .catch((e) => {
+        cb(e);
+      });
+  },
+  getGalleryItems(cb) {
+    axios
+      .get(SETTINGS.API_BASE_PATH + 'gallery?_embed')
+      .then((response) => {
+        cb(response.data);
+      })
+      .catch((e) => {
+        cb(e);
+      });
+  },
+  getShows(cb) {
+    axios
+      .get(SETTINGS.API_BASE_PATH + 'show?_embed')
+      .then((response) => {
+        cb(response.data);
+      })
+      .catch((e) => {
+        cb(e);
+      });
+  },
 };
+

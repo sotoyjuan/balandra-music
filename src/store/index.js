@@ -8,6 +8,10 @@ import user from './modules/user'
 import post from './modules/post'
 import page from './modules/page'
 import categories from './modules/categories'
+import album from './modules/album'
+import musicsheet from './modules/musicsheet'
+import gallery from './modules/gallery'
+import show from './modules/show'
 
 Vue.use(Vuex)
 
@@ -27,7 +31,11 @@ export default new Vuex.Store({
     user,
     post,
     page,
-    categories
+    categories,
+    album,
+    musicsheet,
+    gallery,
+    show,
   },
   strict: debug,
   plugins: [localStorage]

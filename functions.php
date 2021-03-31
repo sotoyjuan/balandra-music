@@ -33,3 +33,56 @@ function my_excerpt_length($length)
   return 35;
 }
 add_filter('excerpt_length', 'my_excerpt_length');
+
+
+// Custom post types
+
+function album_cpt() {
+  $args = array(
+    'public'       => true,
+    'show_in_rest' => true,
+    'label'        => 'Albums',
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type( 'album', $args );
+}
+add_action( 'init', 'album_cpt' );
+add_post_type_support('album', 'custom-fields');
+
+function music_sheet_cpt() {
+  $args = array(
+    'public'       => true,
+    'show_in_rest' => true,
+    'label'        => 'Music Sheets',
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type('musicsheet', $args);
+}
+add_action('init', 'music_sheet_cpt');
+add_post_type_support('musicsheet', 'custom-fields');
+
+function gallery_cpt()
+{
+  $args = array(
+    'public'       => true,
+    'show_in_rest' => true,
+    'label'        => 'Gallery Items',
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type('gallery', $args);
+}
+add_action('init', 'gallery_cpt');
+add_post_type_support('gallery', 'custom-fields');
+
+function shows_cpt()
+{
+  $args = array(
+    'public'       => true,
+    'show_in_rest' => true,
+    'label'        => 'Shows',
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type('show', $args);
+}
+add_action('init', 'shows_cpt');
+add_post_type_support('show', 'custom-fields');

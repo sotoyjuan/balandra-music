@@ -6,6 +6,14 @@ import Home from '../components/Home.vue';
 import Post from '../components/Post/Post.vue';
 import Page from '../components/Page/Page.vue';
 import News from '../components/News.vue';
+import Contact from '../components/Contact.vue';
+import Music from '../components/Music.vue';
+import Gallery from '../components/Gallery.vue';
+import Shows from '../components/Shows.vue';
+
+
+
+
 
 Vue.use(Router);
 
@@ -26,6 +34,26 @@ const router = new Router({
       path: '/news',
       name: 'News',
       component: News
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact,
+    },
+    {
+      path: '/music',
+      name: 'Music',
+      component: Music,
+    },
+    {
+      path: '/gallery',
+      name: 'Gallery',
+      component: Gallery,
+    },
+    {
+      path: '/shows',
+      name: 'Shows',
+      component: Shows,
     },
     {
       path: '/:pageSlug',
