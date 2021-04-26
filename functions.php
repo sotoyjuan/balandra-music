@@ -86,3 +86,16 @@ function shows_cpt()
 }
 add_action('init', 'shows_cpt');
 add_post_type_support('show', 'custom-fields');
+
+function past_shows_cpt()
+{
+  $args = array(
+    'public'       => true,
+    'show_in_rest' => true,
+    'label'        => 'Past Shows',
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type('past_show', $args);
+}
+add_action('init', 'past_shows_cpt');
+add_post_type_support('past_show', 'custom-fields');

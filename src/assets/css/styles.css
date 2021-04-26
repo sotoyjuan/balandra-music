@@ -46,3 +46,7 @@ input.input:placeholder {
 .router-link-exact-active {
   color: #9f7aea
 }
+
+.mc-field-group {
+  text-align: center;
+}

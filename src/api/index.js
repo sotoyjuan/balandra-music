@@ -6,12 +6,12 @@ export default {
     axios
       .get(
         SETTINGS.API_BASE_PATH +
-          'categories?sort=name&hide_empty=true&per_page=50'
+          "categories?sort=name&hide_empty=true&per_page=50"
       )
-      .then(response => {
-        cb(response.data.filter(c => c.name !== 'Uncategorized'));
+      .then((response) => {
+        cb(response.data.filter((c) => c.name !== "Uncategorized"));
       })
-      .catch(e => {
+      .catch((e) => {
         cb(e);
       });
   },
@@ -28,8 +28,7 @@ export default {
   },
 
   getPage(id, cb) {
-    if(!Number.isInteger(id) || !id)
-      return false;
+    if (!Number.isInteger(id) || !id) return false;
 
     axios
       .get(SETTINGS.API_BASE_PATH + "pages/" + id + "?_embed")
@@ -51,10 +50,10 @@ export default {
         cb(e);
       });
   },
-  
+
   getAlbums(cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'album?_embed')
+      .get(SETTINGS.API_BASE_PATH + "album?_embed")
       .then((response) => {
         cb(response.data);
       })
@@ -64,7 +63,7 @@ export default {
   },
   getMusicSheets(cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'musicsheet?_embed')
+      .get(SETTINGS.API_BASE_PATH + "musicsheet?_embed")
       .then((response) => {
         cb(response.data);
       })
@@ -74,7 +73,7 @@ export default {
   },
   getGalleryItems(cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'gallery?_embed')
+      .get(SETTINGS.API_BASE_PATH + "gallery?_embed")
       .then((response) => {
         cb(response.data);
       })
@@ -84,7 +83,17 @@ export default {
   },
   getShows(cb) {
     axios
-      .get(SETTINGS.API_BASE_PATH + 'show?_embed')
+      .get(SETTINGS.API_BASE_PATH + "show?_embed")
+      .then((response) => {
+        cb(response.data);
+      })
+      .catch((e) => {
+        cb(e);
+      });
+  },
+  getPastShows(cb) {
+    axios
+      .get(SETTINGS.API_BASE_PATH + "past_show?_embed")
       .then((response) => {
         cb(response.data);
       })
