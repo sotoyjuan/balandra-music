@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@babel/helper-compilation-targets": "^7.13.16",
     "@babel/preset-env": "^7.8.3",
     "autoprefixer": "^9.7.4",
     "babel-core": "^6.26.3",
